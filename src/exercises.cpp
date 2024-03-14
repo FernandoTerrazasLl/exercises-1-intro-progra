@@ -48,10 +48,10 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   if (0 <= a <= 1000000 && 0 <= b <= 1000000){
 
-     if(B == 0){
+     if(b == 0){
       cout << "Impossible" << endl;
      } else{
-      int result = A / B;
+      int result = a / b;
       cout << result << endl;
     }
   }
