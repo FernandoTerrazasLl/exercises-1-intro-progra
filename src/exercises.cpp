@@ -163,19 +163,19 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  char s1_ = s1 [0];
+    char s1_ = s1 [0];
     char s2_ = s2 [0];
     char s3_ = s3 [0];
     char s4_ = s4 [0];
     char s5_ = s5 [0];
 
-    string result1 = s1_ + s2_ + s3_ + s4_ + s5_ ;
+    string result1 = to_string(s1_ + s2_ + s3_ + s4_ + s5_) ;
     string result_
 
-        if(s1_ == s5_){
+      if(s1_ == s5_){
         result_ = "Hemos encontrado algo!" + endl;
 
-        } else {
+      }else {
         result_ = "Aun sin suerte" + endl;
 
         }
