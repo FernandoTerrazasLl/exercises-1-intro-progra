@@ -117,7 +117,7 @@ void exercise_6(int number) {
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
   if(r >= 0){
-        volume = 4 * 3.14 * (r * r);
+        double volume = 4 * 3.14 * (r * r);
         cout << volume << endl;
     } else if(r < 0){
         cout << "Error: Radius cannot be negative." << endl;
