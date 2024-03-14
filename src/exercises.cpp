@@ -46,7 +46,7 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-  if(0 <= A <= 1000000 && 0 <= B <= 1000000){
+  if (0 <= a <= 1000000 && 0 <= b <= 1000000){
 
      if(B == 0){
       cout << "Impossible" << endl;
