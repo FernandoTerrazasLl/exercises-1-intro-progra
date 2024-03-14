@@ -126,6 +126,39 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+      if(seconds >= 0){
+        int horas = seconds / 3600;
+        int segundos_2 = seconds % 3600;
+        int minutos = segundos_2 / 60;
+        int segundos_finales = segundos_2 % 60;
+
+        string horas_ = to_string(horas);
+        string minutos_ = to_string(minutos);
+        string segundos_finales_ = to_string(segundos_finales);
+
+        int horas_size = horas_.size();
+        int minutos_size = minutos_.size();
+        int segundos_finales_size = segundos_finales_.size();
+
+        if(horas_size < 2){
+            cout << "0" << horas << ":";
+        } else {
+            cout << horas << ":";
+        }
+        if(minutos_size < 2){
+            cout << "0" << minutos << ":";
+        } else {
+            cout << minutos << ":";
+        }
+        if(segundos_finales_size < 2){
+            cout << "0" << segundos_finales << endl;
+        } else{
+            cout << segundos_finales << endl;
+        }
+
+    } else if(seconds < 0){
+        cout << "Error: Input seconds cannot be negative." << endl;
+    }
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
