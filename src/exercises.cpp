@@ -17,24 +17,31 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-  double D = (B * B) - (4 * A * C);
 
-    if(D >= 0) {
+    double D = (B * B) - (4 * A * C);
+
+    
+    if (A==0 && B==0){
+
+    } else if (A == 0){
+        cout << -C/B << endl;
+
+    } else if (B == 0){
+        cout << sqrt(-C/A)<< endl;
+    } else if (D < 0){
+
+    } else if (D >= 0) {
         double sqrt_D = sqrt(D);
         double x1 = (-B + sqrt_D) / (2 * A);
         double x2 = (-B - sqrt_D) / (2 * A);
-        cout << x1 << endl;
-        cout << x2 << endl;
-
-    } else if (A==0 && B==0){
-        cout << C;
-    } else if (A == 0){
-        cout << -C/B;
-    } else if (B == 0){
-        cout << sqrt(-C/A);
-    } else if (D < 0){
         
+        if (x1 == x2){
+            cout << x1 << endl;
+        } else {
+            cout << x1 << " " << x2 << endl;
+        }
     }
+
 }
 
 void exercise_3(int a, int b) {
