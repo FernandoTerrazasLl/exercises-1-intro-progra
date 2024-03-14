@@ -10,8 +10,22 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
-}
+   double D = (B * B) - (4 * A * C);
+   if(D >= 0) {
+      double sqrt_D = sqrt(D);
+      double x1 = (-B + sqrt_D) / (2 * A);
+      double x2 = (-B - sqrt_D) / (2 * A);
+      cout << x1 << endl;
+      cout << x2 << endl;
+
+    } else if (A==0 && B==0){
+        cout << C;
+    } else if (A == 0){
+        cout << -C/B;
+
+    } else if (B == 0){
+        cout << sqrt(-C/A);
+    } 
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
