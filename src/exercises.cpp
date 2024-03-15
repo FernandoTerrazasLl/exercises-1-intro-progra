@@ -182,16 +182,15 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 }
 
 int exercise_10(int a, int b) {
-  if(a >= 0 && b >= 0){
+    if(a >= 0 && b >= 0){
         int sum = a + b;
         int digits = to_string(sum).size();
 
         int result = sum * digits;
-        cout << result << endl;
+        return result;
     } else {
-        cout << '0' << endl;
+        return 0;
     }
-  return 0;
 
 }
 
