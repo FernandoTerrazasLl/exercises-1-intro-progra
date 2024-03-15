@@ -168,18 +168,10 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
     char s4_ = s4[0];
     char s5_ = s5[0];
 
-    string result_;
-
-        if(s1_ == s5_){
-            result_ = "Hemos encontrado algo!\n";
-
-        } else {
-            result_ = "Aun sin suerte\n";
-        }
-    string result2 = result_; 
+    
     string result1 = string(1, s1_) + string(1, s2_) + string(1, s3_) + string(1, s4_) + string(1, s5_) + "\n";
 
-    return result1 + result2;
+    return result1;
 
 }
 
