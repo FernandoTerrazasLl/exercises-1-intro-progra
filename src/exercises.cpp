@@ -221,7 +221,7 @@ string exercise_14(int number_of_docs) {
         string result1 = "No se encontraron documentos";
         return result1;
     }else{
-        string result2 = number_of_docs + "documentos encontrados";
+        string result2 = to_string(number_of_docs) + " "+ "documentos encontrados";
         return result2;
     }
   return 0;
