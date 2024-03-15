@@ -162,8 +162,23 @@ void exercise_8(long int seconds) {
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
+    char s1_ = s1 [0];
+    char s2_ = s2 [0];
+    char s3_ = s3 [0];
+    char s4_ = s4 [0];
+    char s5_ = s5 [0];
 
-return "";
+    string result_;
+
+        if(s1_ == s5_){
+            result_ = "Hemos encontrado algo!\n";
+
+        } else {
+            result_ = "Aun sin suerte\n";
+        }
+    string result1 = string(1, s1_) + string(1, s2_) + string(1, s3_) + string(1, s4_) + string(1, s5_) + "\n";
+    cout << result1 << endl;
+    return result_;
 }
 
 int exercise_10(int a, int b) {
@@ -198,7 +213,8 @@ void exercise_12(string color1, int numb1,
                  string color2, int numb2,
                  string color3, int numb3,
                  string color4, int numb4) {
-  // TODO: YOUR CODE HERE
+
+
 
 }
 
