@@ -176,10 +176,10 @@ string exercise_11(int number) {
 
     int codigo_fibo = 11235813;
     if (number == codigo_fibo){
-        return "Se encontro FIbonacci \n"; 
+        return "Se encontro FIbonacci"; 
 
     } else {
-        return "Esto no es de Fibonacci \n";
+        return "Esto no es de Fibonacci";
     }
     return 0;
 }
