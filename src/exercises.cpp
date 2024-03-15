@@ -213,8 +213,18 @@ string exercise_13(int age, int years_of_experience) {
 }
 
 string exercise_14(int number_of_docs) {
-  // TODO: YOUR CODE HERE
-  return "";
+      if(number_of_docs == 1){
+        string result = "Se encontro un documento";
+        return result; 
+
+    }else if(number_of_docs == 0){
+        string result1 = "No se encontraron documentos";
+        return result1;
+    }else{
+        string result2 = number_of_docs + "documentos encontrados";
+        return result2;
+    }
+  return 0;
 }
 
 void exercise_15(int a, int b, int c) {
