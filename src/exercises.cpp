@@ -162,21 +162,21 @@ void exercise_8(long int seconds) {
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
-    char s1_ = s1[0];
-    char s2_ = s2[0];
-    char s3_ = s3[0];
-    char s4_ = s4[0];
-    char s5_ = s5[0];
 
-    
-    string result1 = string(1, s1_) + string(1, s2_) + string(1, s3_) + string(1, s4_) + string(1, s5_) + "\n";
-
-    return result1;
-
+return "";
 }
 
 int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
+  if(a >= 0 && b >= 0){
+        int sum = a + b;
+        int digits = to_string(sum).size();
+
+        int result = sum * digits;
+        cout << result << endl;
+    } else {
+        cout << '0' << endl;
+    }
+  return 0;
 
 }
 
