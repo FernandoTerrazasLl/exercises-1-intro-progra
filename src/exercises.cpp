@@ -176,7 +176,7 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
         } else {
             result_ = "Aun sin suerte\n";
         }
-    string result1 = string(1, s1_) + string(1, s2_) + string(1, s3_) + string(1, s4_) + string(1, s5_) + "\n";
+    string result1 = string(1, s1_) + string(1, s2_) + string(1, s3_) + string(1, s4_) + string(1, s5_);
     cout << result1 << endl;
     return result_;
 }
