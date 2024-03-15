@@ -168,23 +168,22 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-    if(a >= 0 && b >= 0){
-        int sum = a + b;
-        int digits = to_string(sum).size();
 
-        int result = sum * digits;
-        cout << result << endl;
-    } else {
-        cout << '0' << endl;
-    }
-
-    return 0;
 }
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  return "";
+
+    int codigo_fibo = 11235813;
+    if (number == codigo_fibo){
+        return "Se encontro FIbonacci \n"; 
+
+    } else {
+        return "Esto no es de Fibonacci \n";
+    }
+    return 0;
 }
+  
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
