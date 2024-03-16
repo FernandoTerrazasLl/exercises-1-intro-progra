@@ -279,10 +279,13 @@ void exercise_16(int debut, int fin) {
     if(debut == fin){
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
     }
-    if(debut > fin){
+    else if(debut > 24 || fin > 24 || debut < 0 || fin < 0){
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+    }
+    else if(debut > fin){
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
     }
-    if(debut >=0 && debut <= 24 && fin >=0 && fin <=24){
+    else if(debut >=0 && debut <= 24 && fin >=0 && fin <=24){
 
             if(debut <= 7 && fin <= 7){
                 hours = fin - debut;
@@ -317,17 +320,17 @@ void exercise_16(int debut, int fin) {
                 cout << "El monto total a pagar es de " << tarifa1 + tarifa2 << " boliviano(s)." << endl;
             }else if(debut <= 7 && fin >= 17 && fin <= 24){
                 hours = fin - debut;
-                int hours1 = debut-7;
+                int hours1 = 7-debut;
                 int tarifa1 = hours1 * 1;
                 int hours2 = fin-17;
                 int tarifa2 = hours2 * 1;
                 int hours11 = hours1 + hours2;
                 int tarifa11 = hours11 * 1;
-                int hours3 = hours - (hours1 + hours2);
+                int hours3 = hours - hours11;
                 int tarifa3 = hours3 * 2;
                 cout << "Haz alquilado una bicicleta por" << endl;
                 cout << hours11 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-                cout << hours2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+                cout << hours3 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
                 cout << "El monto total a pagar es de " << tarifa1 + tarifa2 + tarifa3 << " boliviano(s)." << endl;
             }else if(debut <= 17 && debut >= 7 && fin >= 17 && fin <= 24){
                 hours = fin - debut;
@@ -341,7 +344,4 @@ void exercise_16(int debut, int fin) {
                 cout << "El monto total a pagar es de " << tarifa1 + tarifa2 << " boliviano(s)." << endl;
                 
             }
-    }else{
-        cout << "Las horas deben estar entre 0 y 24!" << endl;
-    }
 }
